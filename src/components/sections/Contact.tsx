@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail, MessageCircle } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { FORMSPREE_ENDPOINT, SITE_CONFIG } from '../../lib/constants';
 import type { ContactFormData } from '../../types';
@@ -32,11 +32,15 @@ export function Contact() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          service: 'Professional Domain Email Setup',
+          subject: 'New Domain Email Setup Request'
+        }),
       });
 
       if (response.ok) {
-        setSubmissionStatus('Thank you for your message! I will get back to you soon.');
+        setSubmissionStatus('Thank you! We will get back to you within 24 hours with a custom solution for your domain email setup.');
         setFormData({ name: '', email: '', message: '' });
       } else {
         setSubmissionStatus('Something went wrong, please try again.');
@@ -52,12 +56,12 @@ export function Contact() {
     <section id="contact" className="py-32 px-6 bg-black text-white">
       <div className="max-w-3xl mx-auto">
         <h2 className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] tracking-[-0.09em] mb-8">
-          CONTACT
+          GET STARTED
         </h2>
         <p className="font-['Be_Vietnam'] font-normal text-[40px] leading-[109%] mb-16">
-          Interested in working together?
+          Ready to upgrade your business communication?
           <br />
-          Let's connect via <span className="font-bold">email</span> or <span className="font-bold">LinkedIn</span>
+          Let's set up your <span className="font-bold">professional domain email</span> today
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-8">
@@ -67,44 +71,52 @@ export function Contact() {
               name="name"
               value={formData.name}
               onChange={handleInputChange}
-              placeholder="Name"
+              placeholder="Your Name"
               required
-              className="w-full p-4 bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full p-4 bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-cyan-400"
             />
             <input
               type="email"
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              placeholder="Email"
+              placeholder="Current Email"
               required
-              className="w-full p-4 bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-white"
+              className="w-full p-4 bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-cyan-400"
             />
           </div>
+          <input
+            type="text"
+            name="domain"
+            placeholder="Your Domain (e.g., yourbusiness.com)"
+            className="w-full p-4 bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+          />
           <textarea
             name="message"
             value={formData.message}
             onChange={handleInputChange}
-            placeholder="Message"
+            placeholder="Tell us about your email needs (number of email addresses, team size, etc.)"
             rows={6}
             required
-            className="w-full p-4 bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-white"
+            className="w-full p-4 bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-cyan-400"
           />
           <div className="flex justify-between items-center">
             <div className="flex gap-6">
+              <a 
+                href={`mailto:${SITE_CONFIG.author.email}`}
+                aria-label="Send email"
+                className="hover:text-cyan-400 transition-colors"
+              >
+                <Mail size={24} />
+              </a>
               <a 
                 href={SITE_CONFIG.author.linkedin} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 aria-label="LinkedIn profile"
+                className="hover:text-cyan-400 transition-colors"
               >
-                <Linkedin size={24} />
-              </a>
-              <a 
-                href={`mailto:${SITE_CONFIG.author.email}`}
-                aria-label="Send email"
-              >
-                <Mail size={24} />
+                <MessageCircle size={24} />
               </a>
             </div>
             <Button
@@ -113,7 +125,7 @@ export function Contact() {
               variant="primary"
               className="bg-cyan-500 hover:bg-cyan-600 focus:ring-cyan-500"
             >
-              {isSubmitting ? 'Sending...' : 'SEND'}
+              {isSubmitting ? 'Sending...' : 'GET QUOTE'}
             </Button>
           </div>
         </form>
