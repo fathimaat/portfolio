@@ -1,8 +1,8 @@
 export const SITE_CONFIG = {
-  name: 'Razin Rayees',
-  title: 'Razin Rayees - CS Student & Developer',
-  description: 'CS student passionate about putting my skills to use. Explore my projects, certificates, and get in touch.',
-  url: 'https://razinrayees.com',
+  name: 'Razin Rayees - Domain Email Service',
+  title: 'Razin Rayees - Professional Domain Email Setup',
+  description: 'Transform your business communication with professional domain email addresses. We help startups and professionals set up custom email addresses using Zoho instead of Gmail.',
+  url: 'https://razinrayees.com/mail',
   author: {
     name: 'Razin Rayees',
     email: 'razin@razinrayees.com',
@@ -14,8 +14,9 @@ export const SITE_CONFIG = {
 export const NAVIGATION_ITEMS = [
   { label: 'Home', href: '#' },
   { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Certificates', href: '#certificates' },
+  { label: 'Services', href: '#services' },
+  { label: 'Process', href: '#process' },
+  { label: 'Benefits', href: '#benefits' },
   { label: 'Contact', href: '#contact' }
 ];
 
