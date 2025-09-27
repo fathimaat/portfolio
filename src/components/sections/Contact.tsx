@@ -59,9 +59,9 @@ export function Contact() {
           GET STARTED
         </h2>
         <p className="font-['Be_Vietnam'] font-normal text-[40px] leading-[109%] mb-16">
-          Ready to upgrade your business communication?
+          Ready to upgrade your business communication? 
           <br />
-          Let's set up your <span className="font-bold">professional domain email</span> today
+          Let me set up your <span className="font-bold">professional domain email</span> today
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-8">
@@ -95,7 +95,7 @@ export function Contact() {
             name="message"
             value={formData.message}
             onChange={handleInputChange}
-            placeholder="Tell us about your email needs (number of email addresses, team size, etc.)"
+            placeholder="Tell me about your email needs (number of email addresses, team size, etc.)"
             rows={6}
             required
             className="w-full p-4 bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-cyan-400"
@@ -131,7 +131,7 @@ export function Contact() {
         </form>
         {submissionStatus && (
           <p className="mt-4 text-lg" role="status">
-            {submissionStatus}
+            {submissionStatus.replace('We will', 'I will')}
           </p>
         )}
       </div>

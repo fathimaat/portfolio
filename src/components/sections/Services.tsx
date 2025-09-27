@@ -29,7 +29,7 @@ export function Services() {
     <section id="services" className="py-32 px-6 bg-black text-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] tracking-[-0.09em] mb-16">
-          OUR SERVICES
+          WHAT I OFFER
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">

@@ -17,7 +17,7 @@ export function Footer() {
     <footer className="py-32 px-6 bg-black text-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center mb-16">
-          <p className="text-3xl mb-8">Professional Email Solutions</p>
+          <p className="text-3xl mb-8">Domain Email Setup Service</p>
           <Logo />
         </div>
         
@@ -84,7 +84,7 @@ export function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-16 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 ProMail Setup. Professional domain email solutions.</p>
+          <p>&copy; 2025 Razin Rayees. Professional domain email setup service.</p>
         </div>
       </div>
     </footer>

@@ -9,10 +9,10 @@ export function About() {
         </h2>
         <div className="space-y-6 md:space-y-8 font-['Be_Vietnam'] font-normal text-[24px] md:text-[40px] leading-[120%] md:leading-[108%] max-w-4xl">
           <p>
-            Stop using <span className="font-bold tracking-[-0.06em]">generic Gmail addresses</span> for your business. Professional email addresses like <span className="font-bold tracking-[-0.06em]">hello@yourdomain.com</span> build trust and credibility.
+            I help you stop using <span className="font-bold tracking-[-0.06em]">generic Gmail addresses</span> for your business. Professional email addresses like <span className="font-bold tracking-[-0.06em]">hello@yourdomain.com</span> build trust and credibility.
           </p>
           <p>
-            We specialize in setting up <span className="font-bold tracking-[-0.06em]">custom domain email addresses</span> using <span className="font-bold tracking-[-0.06em]">Zoho Mail</span> - a professional, secure, and reliable email solution.
+            I specialize in setting up <span className="font-bold tracking-[-0.06em]">custom domain email addresses</span> using <span className="font-bold tracking-[-0.06em]">Zoho Mail</span> - a professional, secure, and reliable email solution.
           </p>
           <p>
             Perfect for <span className="font-bold tracking-[-0.06em]">startups</span>, <span className="font-bold tracking-[-0.06em]">freelancers</span>, and <span className="font-bold tracking-[-0.06em]">small businesses</span> who want to make a professional impression from day one.

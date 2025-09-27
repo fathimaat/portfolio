@@ -5,27 +5,27 @@ const steps = [
   {
     number: '01',
     title: 'Domain Verification',
-    description: 'We verify your domain ownership and check DNS accessibility'
+    description: 'I verify your domain ownership and check DNS accessibility'
   },
   {
     number: '02',
     title: 'Zoho Account Setup',
-    description: 'Create and configure your Zoho Mail account with optimal settings'
+    description: 'I create and configure your Zoho Mail account with optimal settings'
   },
   {
     number: '03',
     title: 'DNS Configuration',
-    description: 'Set up MX records, SPF, DKIM, and DMARC for maximum deliverability'
+    description: 'I set up MX records, SPF, DKIM, and DMARC for maximum deliverability'
   },
   {
     number: '04',
     title: 'Email Creation',
-    description: 'Create professional email addresses and configure mail clients'
+    description: 'I create professional email addresses and configure mail clients'
   },
   {
     number: '05',
     title: 'Testing & Handover',
-    description: 'Thorough testing and complete handover with documentation'
+    description: 'I do thorough testing and complete handover with documentation'
   }
 ];
 
@@ -34,7 +34,7 @@ export function Process() {
     <section id="process" className="py-32 px-6 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="font-['Be_Vietnam'] font-semibold text-[40px] leading-[100%] mb-16">
-          OUR PROCESS
+          MY PROCESS
         </h2>
         
         <div className="space-y-8">

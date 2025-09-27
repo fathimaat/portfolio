@@ -1,11 +1,11 @@
 export const SITE_CONFIG = {
-  name: 'ProMail Setup',
-  title: 'ProMail Setup - Professional Domain Email Service',
+  name: 'Razin Rayees - Domain Email Service',
+  title: 'Razin Rayees - Professional Domain Email Setup',
   description: 'Transform your business communication with professional domain email addresses. We help startups and professionals set up custom email addresses using Zoho instead of Gmail.',
   url: 'https://razinrayees.com/mail',
   author: {
-    name: 'ProMail Setup',
-    email: 'hello@promailsetup.com',
+    name: 'Razin Rayees',
+    email: 'razin@razinrayees.com',
     linkedin: 'https://linkedin.com/in/razinrayees',
     github: 'https://github.com/razinrayees'
   }
