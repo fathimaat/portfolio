@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { Navigation } from './components/layout/Navigation';
 import { Hero } from './components/sections/Hero';
 import { About } from './components/sections/About';
-import { Quote } from './components/sections/Quote';
-import { Projects } from './components/sections/Projects';
-import { Certificates } from './components/sections/Certificates';
+import { Services } from './components/sections/Services';
+import { Process } from './components/sections/Process';
+import { Benefits } from './components/sections/Benefits';
 import { Contact } from './components/sections/Contact';
 import { Footer } from './components/layout/Footer';
 
@@ -64,8 +64,6 @@ function App() {
     };
   }, [isMobile]);
 
-  const path = window.location.pathname;
-
   const CursorElements = () => (
     !isMobile ? (
       <>
@@ -95,9 +93,9 @@ function App() {
       <Navigation />
       <Hero />
       <About />
-      <Quote />
-      <Projects />
-      <Certificates />
+      <Services />
+      <Process />
+      <Benefits />
       <Contact />
       <Footer />
     </div>
